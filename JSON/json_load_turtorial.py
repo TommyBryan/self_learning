@@ -1,6 +1,6 @@
 # JSON = JavaScript Objecct Notation
 
-import json
+import json # imported json from the python library
 
 json_string = '''
     {
@@ -15,11 +15,13 @@ json_string = '''
                 "id": 2,
                 "name": "Joe",
                 "age": 33,
-                "full-time: false
+                "full-time": false
             }
         ]
     }
 '''
 
 data  = json.loads(json_string)
-print(data)
+print(data) # prints all data but in Python dictionary
+print(data['students']) # Prints using 'students' key
+print(data['students'][0]) # Prints using 'students' key from first index (0 = 1, 1 = 2)
